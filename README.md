@@ -18,7 +18,7 @@
 # How to Run the Project
 1. Clone the repository
 2. Open the directory
-3. Locate the `Model.py` inside the previous directory of the cloned repository
+3. Locate the `Train.py` inside the previous directory of the cloned repository
 4. Run the file on your chosen IDEs
 5. If done correctly, this will generate the results
 

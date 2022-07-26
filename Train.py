@@ -1,24 +1,24 @@
 #%% Import libraries
 import os
-import pandas as pd
 import re
-import numpy as np
-import string
-import statistics as st
-import datetime
 import json
 import pickle
+import string
+import datetime
+import numpy as np
+import pandas as pd
+import statistics as st
 
-from tensorflow.keras.callbacks import TensorBoard,EarlyStopping
-from sklearn.metrics import classification_report
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import OneHotEncoder
-from tensorflow.keras.layers import LSTM, Dense, Dropout
-from tensorflow.keras import Input,Sequential
-from tensorflow.keras.layers import  Embedding, Bidirectional
 from tensorflow.keras.utils import plot_model
+from tensorflow.keras import Input,Sequential
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.metrics import classification_report
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.layers import LSTM, Dense, Dropout
+from tensorflow.keras.layers import  Embedding, Bidirectional
+from tensorflow.keras.callbacks import TensorBoard,EarlyStopping
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 #%% Define function
 # Cleaning text
 def clean_text(text):
@@ -42,7 +42,7 @@ OHE_SAVE_PATH = os.path.join(os.getcwd(),'saved_models','ohe.pkl')
 MODEL_SAVE_PATH = os.path.join(os.getcwd(), 'saved_models', 'model.h5')
 
 tensorboard_callback = TensorBoard(log_dir=LOGS_PATH,histogram_freq=1)
-early_callback = EarlyStopping(monitor='val_loss',patience=3)
+early_callback = EarlyStopping(monitor='val_loss',patience=5)
 #%% Data loading
 df = pd.read_csv('https://raw.githubusercontent.com/susanli2016/PyCon-Canada-2019-NLP-Tutorial/master/bbc-text.csv')
 
@@ -172,3 +172,6 @@ from DeepLearnModule import ModelHist_plot,Model_Analysis
 
 ModelHist_plot(hist,'loss','val_loss','loss','val_loss')
 ModelHist_plot(hist,'acc','val_acc','acc','val_acc')
+
+Model_Analysis(y_actual,y_pred)
+# %%

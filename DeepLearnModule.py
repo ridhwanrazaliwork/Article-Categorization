@@ -25,8 +25,6 @@ def Model_Analysis(y_true,y_pred):
     ConfusionMatrixDisplay.from_predictions(y_true,y_pred)
     plt.show()
 
-    print(cr)
-
 
 def boxplot(df,con_col,nrows=1,ncols=1, size1=(30,40)):
     fig, ax = plt.subplots(nrows, ncols, figsize=size1)

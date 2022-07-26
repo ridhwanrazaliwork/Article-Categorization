@@ -1,8 +1,5 @@
 # Article-Categorization
 
-# Background
-
-
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
@@ -14,7 +11,7 @@
 ![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
 
 # Description
-
+The purpose for this project is to categorize unseen articles into 5 categories namely Sport, Tech, Business, Entertainment and Politics
 # How to Run the Project
 1. Clone the repository
 2. Open the directory

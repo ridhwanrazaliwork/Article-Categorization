@@ -11,7 +11,8 @@
 ![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
 
 # Description
-The purpose for this project is to categorize unseen articles into 5 categories namely Sport, Tech, Business, Entertainment and Politics
+This project's goal is to group previously unknown articles into five categories: sport, technology, business, entertainment, and politics. The BBC text data, which contains more than 2000 articles, is used to train a deep learning model using bi-directional LSTM layer.
+
 # How to Run the Project
 1. Clone the repository
 2. Open the directory
